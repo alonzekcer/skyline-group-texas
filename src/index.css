@@ -72,3 +72,12 @@ body {
 .marquee-container:hover .marquee-content {
   animation-play-state: paused;
 }
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.scroll-left {
+  animation: scroll 40s linear infinite;
+}
