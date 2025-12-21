@@ -7,7 +7,7 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToContact }) => {
     return (
-        <section className="relative h-[85vh] flex items-center overflow-hidden bg-navy">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-navy py-20">
             <video
                 className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale"
                 autoPlay muted loop playsInline
