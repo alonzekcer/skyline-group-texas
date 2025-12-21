@@ -1,8 +1,13 @@
 import React from 'react';
 import { Zap, Users, Phone } from 'lucide-react';
 import { FOUNDERS } from '../data/data';
+import { PageId } from '../types';
 
-const AboutView: React.FC = () => (
+interface AboutViewProps {
+    onNavigate: (id: PageId) => void;
+}
+
+const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => (
     <div className="flex flex-col">
         <section className="py-24 bg-white">
             <div className="container mx-auto px-6">
@@ -13,6 +18,14 @@ const AboutView: React.FC = () => (
                         <p className="text-xl text-slate-500 font-medium leading-relaxed italic mb-10">
                             אנחנו היזמים, בעלי הידע והניסיון, מעבירים את הליווי בעצמנו בצורה ישירה, זמינה ואישית יד ביד לאורך כל הדרך.
                         </p>
+                        <div className="space-y-6 mb-12">
+                            <button
+                                onClick={() => onNavigate('contact' as PageId)}
+                                className="bg-gold text-navy px-10 py-4 rounded-xl font-black text-lg shadow-xl hover:scale-105 transition-all"
+                            >
+                                דברו איתנו עכשיו
+                            </button>
+                        </div>
                         <div className="space-y-8">
                             <div className="flex gap-6 p-8 bg-slate-50 rounded-[40px] border border-slate-100 shadow-sm">
                                 <div className="w-16 h-16 bg-navy text-gold rounded-2xl flex items-center justify-center shrink-0 shadow-lg"><Zap size={32} /></div>

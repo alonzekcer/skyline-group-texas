@@ -21,8 +21,13 @@ import {
 } from 'recharts';
 import { DEFW_STATS } from '../data/data';
 import AnimatedCounter from '../components/AnimatedCounter';
+import { PageId } from '../types';
 
-const MarketView: React.FC = () => (
+interface MarketViewProps {
+    onNavigate: (id: PageId) => void;
+}
+
+const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
     <div className="flex flex-col">
         {/* HERO & GDP SECTION */}
         <section className="py-24 bg-white">
@@ -212,6 +217,16 @@ const MarketView: React.FC = () => (
                             </div>
                         </div>
                     </div>
+                </div>
+
+                {/* Call to Action */}
+                <div className="text-center pb-24">
+                    <button
+                        onClick={() => onNavigate('contact' as PageId)}
+                        className="bg-gold text-navy px-12 py-5 rounded-2xl font-black text-xl shadow-2xl hover:scale-105 transition-all uppercase tracking-tighter"
+                    >
+                        בואו ננתח את העסקה הבאה שלכם
+                    </button>
                 </div>
             </div>
         </section>

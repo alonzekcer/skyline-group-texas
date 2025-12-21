@@ -26,15 +26,35 @@ const App: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentPage]);
 
+  const scrollToContact = () => {
+    if (currentPage === 'home') {
+      document.getElementById('home-contact')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+      setCurrentPage('home');
+      // Delay to ensure the home page is rendered before scrolling
+      setTimeout(() => {
+        document.getElementById('home-contact')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    }
+  };
+
+  const setPageAndScroll = (page: PageId) => {
+    if (page === 'contact') {
+      scrollToContact();
+    } else {
+      setCurrentPage(page);
+    }
+  };
+
   const renderPage = () => {
     switch (currentPage) {
-      case 'home': return <HomeView onNavigate={setCurrentPage} />;
-      case 'market': return <MarketView />;
-      case 'section8': return <Section8View />;
-      case 'course': return <CourseView onNavigate={setCurrentPage} />;
-      case 'about': return <AboutView />;
-      case 'contact': return <ContactView />;
-      default: return <HomeView onNavigate={setCurrentPage} />;
+      case 'home': return <HomeView onNavigate={setPageAndScroll} />;
+      case 'market': return <MarketView onNavigate={setPageAndScroll} />;
+      case 'section8': return <Section8View onNavigate={setPageAndScroll} />;
+      case 'course': return <CourseView onNavigate={setPageAndScroll} />;
+      case 'about': return <AboutView onNavigate={setPageAndScroll} />;
+      case 'contact': return <ContactView onNavigate={setPageAndScroll} />;
+      default: return <HomeView onNavigate={setPageAndScroll} />;
     }
   };
 
@@ -42,7 +62,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-white text-navy flex flex-col font-assistant">
       <Navbar
         currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
+        setCurrentPage={setPageAndScroll}
         setIsMenuOpen={setIsMenuOpen}
       />
 
@@ -50,7 +70,7 @@ const App: React.FC = () => {
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
+        setCurrentPage={setPageAndScroll}
       />
 
       <main className="flex-1 pt-16 md:pt-20">
@@ -59,7 +79,7 @@ const App: React.FC = () => {
         </React.Suspense>
       </main>
 
-      <Footer setCurrentPage={setCurrentPage} />
+      <Footer setCurrentPage={setPageAndScroll} />
     </div>
   );
 };

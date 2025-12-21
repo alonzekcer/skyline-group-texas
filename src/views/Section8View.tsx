@@ -8,10 +8,10 @@ import {
 import { PageId } from '../types';
 
 interface Section8ViewProps {
-    onNavigate?: (id: PageId) => void;
+    onNavigate: (id: PageId) => void;
 }
 
-const Section8View: React.FC<Section8ViewProps> = () => (
+const Section8View: React.FC<Section8ViewProps> = ({ onNavigate }) => (
     <div className="flex flex-col">
         <section className="py-24 bg-white">
             <div className="container mx-auto px-6">
@@ -22,6 +22,14 @@ const Section8View: React.FC<Section8ViewProps> = () => (
                         <p className="text-3xl md:text-4xl text-navy font-black leading-relaxed italic mb-10 border-r-8 border-gold pr-6 py-4 bg-slate-50 rounded-l-3xl">
                             הפוך את ממשלת ארה"ב לשותפה העסקית שלך. מודל המשלב תשואה גבוהה עם ביטחון ממשלתי מלא.
                         </p>
+                        <div className="space-y-6 mb-12">
+                            <button
+                                onClick={() => onNavigate('contact' as PageId)}
+                                className="bg-navy text-gold px-10 py-4 rounded-xl font-black text-lg shadow-xl hover:scale-105 transition-all"
+                            >
+                                דברו איתנו על Section 8
+                            </button>
+                        </div>
                         <p className="text-xl text-slate-500 mb-10 leading-relaxed font-medium">
                             המודל של Skyline Group Texas משלב השכרה באזורי ביקוש (Rating A/B) עם וואוצ'ר ממשלתי המבטיח תשואה יציבה וגבוהה גם כשהשוק משתנה.
                         </p>
