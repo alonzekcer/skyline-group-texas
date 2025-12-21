@@ -27,11 +27,23 @@ const WhyDFWSection: React.FC<WhyDFWSectionProps> = ({ onNavigate }) => {
 
                         <div className="mt-auto relative group flex justify-center">
                             <div className="absolute inset-0 bg-gold/5 rounded-full blur-3xl transform group-hover:scale-110 transition-transform duration-700 opacity-0 group-hover:opacity-50"></div>
-                            <img
-                                src="/skyline-group-texas/images/us_map.png"
-                                alt="USA Map - DFW Focus"
-                                className="relative z-10 w-[85%] h-auto object-contain transition-all duration-700 group-hover:scale-[1.05] filter drop-shadow-xl"
-                            />
+
+                            {/* The Map */}
+                            <div className="relative z-10 w-[85%]">
+                                <img
+                                    src="/skyline-group-texas/images/us_map.png"
+                                    alt="USA Map - DFW Focus"
+                                    className="w-full h-auto object-contain transition-all duration-700 group-hover:scale-[1.05] filter drop-shadow-xl"
+                                />
+
+                                {/* Animated Gold Dot for DFW */}
+                                <div className="absolute top-[63.5%] left-[49.5%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                                    <div className="relative flex h-6 w-6">
+                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
+                                        <span className="relative inline-flex rounded-full h-6 w-6 bg-gold shadow-[0_0_15px_rgba(245,196,81,0.8)] border border-white/20"></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
