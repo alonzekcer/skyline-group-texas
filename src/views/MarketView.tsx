@@ -37,7 +37,7 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                         <span className="text-gold font-black uppercase tracking-widest text-sm mb-4 block">MARKET ANALYTICS</span>
                         <h1 className="text-4xl md:text-7xl font-black text-navy mb-8 leading-[0.9]">DFW: מטרופולין <br /> <span className="text-gold">עם עוצמה של מדינה</span></h1>
                         <p className="text-xl text-slate-500 font-medium italic mb-10 leading-relaxed">
-                            דאלאס-פורט וורת' (DFW) הוא לא רק עיר, הוא כוח כלכלי עולמי. המטרופולין היציב והחזק ביותר בארה"ב להשקעה.
+                            דאלאס-פורט וורת' (DFW) היא לא רק עיר, היא כוח כלכלי עולמי. המטרופולין היציב והחזק ביותר בארה"ב להשקעה.
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
                             <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100">
@@ -54,7 +54,7 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                     </div>
                     <div className="lg:w-1/2 w-full h-[450px] bg-slate-900 rounded-[60px] p-12 shadow-3xl relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-gold/10 rounded-full blur-[100px] -mr-32 -mt-32"></div>
-                        <h4 className="text-2xl font-black text-white mb-8 tracking-tighter">צמיחת ערך מטאורית (מאז 2000)</h4>
+                        <h4 className="text-2xl font-black text-white mb-8 tracking-tighter">צמיחת מחירי הבתים (מאז 2000)</h4>
                         <ResponsiveContainer width="100%" height="70%">
                             <AreaChart data={DEFW_STATS}>
                                 <defs>
@@ -66,7 +66,11 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#ffffff10" />
                                 <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#94a3b8', fontSize: 12, fontWeight: 'bold' }} dy={10} />
                                 <YAxis hide />
-                                <ReTooltip contentStyle={{ borderRadius: '16px', border: 'none', background: '#0c1230', color: '#fff' }} itemStyle={{ color: '#f5c451' }} />
+                                <ReTooltip
+                                    contentStyle={{ borderRadius: '16px', border: 'none', background: '#0c1230', color: '#fff' }}
+                                    itemStyle={{ color: '#f5c451' }}
+                                    formatter={(value: number) => [`$${value.toLocaleString()}`, 'מחיר ממוצע']}
+                                />
                                 <Area type="monotone" dataKey="price" stroke="#f5c451" strokeWidth={4} fillOpacity={1} fill="url(#colorPrice)" />
                             </AreaChart>
                         </ResponsiveContainer>
@@ -108,7 +112,7 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                     <div className="lg:w-1/2">
                         <span className="text-gold font-black uppercase tracking-widest text-sm mb-6 block">TENANT PROFILE</span>
                         <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tighter">מי השוכר הממוצע <br /> <span className="text-gold">בנכסים שלנו?</span></h2>
-                        <p className="text-lg text-blue-100/60 mb-10 italic">אנחנו מתמקדים בשכונות "ירוקות" ומבוקשות בפרברים, המושכות את האוכלוסייה החזקה ביותר.</p>
+                        <p className="text-lg text-blue-100/60 mb-10 italic">אנחנו מתמקדים בשכונות "ירוקות" ומבוקשות ב-DFW, המושכות את האוכלוסייה החזקה ביותר.</p>
                         <ul className="space-y-6">
                             <li className="flex gap-4 items-center">
                                 <div className="w-6 h-6 bg-gold text-navy rounded-full flex items-center justify-center shrink-0"><Check size={14} strokeWidth={4} /></div>

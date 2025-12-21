@@ -8,6 +8,7 @@ export const DEFW_STATS = [
     { name: '2016', price: 220000 },
     { name: '2020', price: 280000 },
     { name: '2022', price: 360000 },
+    { name: '2023', price: 380000 },
     { name: '2024', price: 395000 },
     { name: '2025', price: 420000 },
 ];

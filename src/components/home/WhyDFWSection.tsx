@@ -14,7 +14,7 @@ const WhyDFWSection: React.FC<WhyDFWSectionProps> = ({ onNavigate }) => {
                     <div className="lg:w-1/3 text-right">
                         <h2 className="text-4xl md:text-5xl font-black text-navy mb-6 leading-tight">למה דווקא DFW?</h2>
                         <p className="text-xl text-slate-500 font-medium leading-relaxed mb-8">
-                            מטרופולין דאלאס-פורט וורת' הוא הכלכלה ה-20 בגודלה בעולם. עם הגירה חיובית מטאורית ושוק תעסוקה חזק, זהו היעד המושלם להשקעה יציבה.
+                            מטרופולין דאלאס-פורט וורת' היא הכלכלה ה-20 בגודלה בעולם. עם הגירה חיובית מטאורית ושוק תעסוקה חזק, זהו היעד המושלם להשקעה יציבה.
                         </p>
                         <button
                             onClick={() => onNavigate('market')}
