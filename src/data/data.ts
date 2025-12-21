@@ -30,7 +30,7 @@ export const FULL_SUPPORT: SupportStep[] = [
 export const DEALS: Deal[] = [
     {
         id: '1',
-        address: '7449 Grass Valley Trl, Fort Worth',
+        address: 'Grass Valley Trl, Fort Worth',
         price: '$268,000',
         marketValue: '$330,000',
         rent: '$2,980',
@@ -42,13 +42,13 @@ export const DEALS: Deal[] = [
         sqft: '1,879',
         lotSize: '5,663',
         image: '/skyline-group-texas/images/deal1.jpg',
-        badge: 'נכס מוכח',
+        badge: 'עסקה שהושלמה',
         tags: ['4 חדרי שינה', '2 חדרי רחצה'],
         equity: '$62,000+'
     },
     {
         id: '2',
-        address: '9208 Garden Springs Dr, Fort Worth',
+        address: 'Garden Springs Dr, Fort Worth',
         price: '$275,000',
         marketValue: '$350,000',
         rent: '$3,500',
@@ -60,13 +60,13 @@ export const DEALS: Deal[] = [
         sqft: '3,456',
         lotSize: '5,486',
         image: '/skyline-group-texas/images/deal4.jpg',
-        badge: 'הזדמנות נדירה',
+        badge: 'עסקה שהושלמה',
         tags: ['5 חדרי שינה', '2.5 חדרי רחצה'],
         equity: '$75,000+'
     },
     {
         id: '3',
-        address: '202 Waterwood Dr, Wylie',
+        address: 'Waterwood Dr, Wylie',
         price: '$305,000',
         marketValue: '$380,000',
         rent: '$3,200',
@@ -78,13 +78,13 @@ export const DEALS: Deal[] = [
         sqft: '2,100',
         lotSize: '6,098',
         image: '/skyline-group-texas/images/deal2.jpg',
-        badge: 'הזדמנות להשבחה',
+        badge: 'עסקה שהושלמה',
         tags: ['4 חדרי שינה', '2.5 חדרי רחצה', 'בריכה'],
         equity: '$75,000+'
     },
     {
         id: '4',
-        address: '1258 Herring Dr, Forney',
+        address: 'Herring Dr, Forney',
         price: '$280,000',
         marketValue: '$330,000',
         rent: '$3,100',
@@ -96,7 +96,7 @@ export const DEALS: Deal[] = [
         sqft: '1,880',
         lotSize: '5,050',
         image: '/skyline-group-texas/images/deal5.jpg',
-        badge: 'בנייה חדשה 2025',
+        badge: 'עסקה שהושלמה',
         tags: ['4 חדרי שינה', '2 חדרי רחצה'],
         equity: '$50,000+'
     },
@@ -114,7 +114,7 @@ export const DEALS: Deal[] = [
         sqft: '2,318',
         lotSize: '7,884',
         image: '/skyline-group-texas/images/deal3.jpg',
-        badge: 'עסקה חדשה',
+        badge: 'עסקה שהושלמה',
         tags: ['4 חדרי שינה', '3 חדרי רחצה'],
         equity: '$55,000+'
     }
