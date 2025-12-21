@@ -29,7 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToContact }) => {
                     עם ביקוש קשיח לשכירות ועליות ערך מוכחות לאורך שנים.
                 </p>
                 <p className="text-xl md:text-3xl font-black text-gold mb-12 max-w-4xl mx-auto leading-relaxed fade-in-up uppercase tracking-tight" style={{ animationDelay: '0.3s' }}>
-                    השקעה בדולרים, נכס מוחשי בבעלותכם <br className="hidden md:block" />
+                    השקעה בדולרים, <span className="relative inline-block">נכס מוחשי בבעלותכם<div className="absolute -bottom-1 left-0 w-full h-1 md:h-1.5 bg-gold/40 rounded-full"></div></span> <br className="hidden md:block" />
                     וצוות מקומי שמכיר כל רחוב
                 </p>
                 <div className="flex flex-col sm:flex-row gap-5 justify-center fade-in-up" style={{ animationDelay: '0.4s' }}>
@@ -37,7 +37,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToContact }) => {
                         onClick={onScrollToContact}
                         className="bg-gold text-navy px-12 py-5 rounded-2xl font-black text-xl shadow-2xl animate-glow flex items-center justify-center gap-3 hover:scale-105 transition-all"
                     >
-                        קבעו שיחת היכרות <ArrowLeft size={24} />
+                        אני רוצה לשמוע עוד! <ArrowLeft size={24} />
                     </button>
                 </div>
             </div>
