@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Target, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import RoadmapStep from '../RoadmapStep';
 import { FULL_SUPPORT } from '../../data/data';
 
@@ -109,18 +109,11 @@ const RoadmapSection: React.FC<RoadmapSectionProps> = ({ onScrollToContact }) =>
                         })}
                     </div>
 
-                    {/* Premium Conclusion Block */}
-                    <div className={`mt-32 p-12 md:p-16 bg-navy rounded-[3rem] text-center transition-all duration-1000 transform ${scrollProgress > 0.95 ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
-                        <div className="inline-flex p-5 bg-gold/10 rounded-full mb-8">
-                            <Target size={40} className="text-gold" />
-                        </div>
-                        <h3 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter mb-4">Portfolio Established</h3>
-                        <p className="text-blue-100/60 text-lg max-w-xl mx-auto mb-10 font-medium leading-relaxed">
-                            זהו הרגע בו הכסף שלכם מתחיל לעבוד עבורכם באמת. בנינו עבורכם בסיס חזק לעתיד כלכלי בטוח.
-                        </p>
+                    {/* Simple Conclusion CTA */}
+                    <div className="mt-20 text-center">
                         <button
                             onClick={onScrollToContact}
-                            className="bg-gold text-navy px-12 py-5 rounded-2xl font-black text-xl shadow-2xl hover:scale-105 transition-all flex items-center gap-3 mx-auto"
+                            className="bg-navy text-gold px-12 py-5 rounded-2xl font-black text-xl shadow-2xl hover:scale-105 transition-all flex items-center gap-3 mx-auto"
                         >
                             בואו נצא לדרך <ArrowLeft size={24} />
                         </button>
