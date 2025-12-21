@@ -74,18 +74,18 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                                 <Area type="monotone" dataKey="price" stroke="#f5c451" strokeWidth={4} fillOpacity={1} fill="url(#colorPrice)" />
                             </AreaChart>
                         </ResponsiveContainer>
-                        <div className="mt-8 flex justify-between items-center border-t border-white/10 pt-6">
+                        <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
                             <div className="text-center">
                                 <p className="text-gold font-black text-2xl">+235%</p>
-                                <p className="text-white/40 text-[13px] uppercase font-bold">עליית ערך ממוצעת</p>
+                                <p className="text-white/40 text-[11px] uppercase font-bold leading-tight">עליית ערך ממוצעת ב-25 השנים האחרונות</p>
                             </div>
                             <div className="text-center">
                                 <p className="text-gold font-black text-2xl">#1</p>
-                                <p className="text-white/40 text-[13px] uppercase font-bold">בגידול אוכלוסייה</p>
+                                <p className="text-white/40 text-[11px] uppercase font-bold leading-tight">המטרופולין הצומח ביותר בכל ארה״ב</p>
                             </div>
                             <div className="text-center">
                                 <p className="text-gold font-black text-2xl">AAA</p>
-                                <p className="text-white/40 text-[13px] uppercase font-bold">דירוג אשראי מקסימלי</p>
+                                <p className="text-white/40 text-[11px] uppercase font-bold leading-tight">דירוג חוסן פיננסי הגבוה ביותר לעירייה</p>
                             </div>
                         </div>
                     </div>
