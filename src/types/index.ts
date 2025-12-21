@@ -34,4 +34,5 @@ export interface Founder {
   image: string;
   bio: string;
   phone: string;
+  objectPosition?: string;
 }

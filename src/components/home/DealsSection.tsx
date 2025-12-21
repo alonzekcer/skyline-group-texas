@@ -18,7 +18,7 @@ const DealsSection: React.FC<DealsSectionProps> = ({ onScrollToContact }) => {
             </div>
 
             <div className="marquee-container w-full" dir="ltr">
-                <div className="marquee-content scroll-left" style={{ animationDuration: '240s' }}>
+                <div className="marquee-content scroll-left" style={{ animationDuration: '120s' }}>
                     {Array(6).fill(DEALS).flat().map((deal, index) => (
                         <div key={`${deal.id}-${index}`} className="w-[280px] md:w-[420px] shrink-0 bg-white rounded-[2rem] overflow-hidden shadow-lg border border-slate-100 flex flex-col group transition-all duration-500 hover:-translate-y-1 mr-8">
                             <div className="h-44 md:h-60 relative overflow-hidden">
@@ -49,7 +49,7 @@ const DealsSection: React.FC<DealsSectionProps> = ({ onScrollToContact }) => {
                                 </div>
                                 <div className="flex items-center justify-between pt-4 border-t border-slate-50">
                                     <span className="text-green-600 font-black text-[9px] md:text-[10px] uppercase">
-                                        Equity: {deal.equity}
+                                        הון עצמי: {deal.equity}
                                     </span>
                                     <ArrowLeft size={14} className="text-slate-300 group-hover:text-gold transition-colors" />
                                 </div>

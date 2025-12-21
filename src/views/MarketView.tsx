@@ -202,7 +202,7 @@ const MarketView: React.FC = () => (
                                 <li className="flex gap-4">
                                     <Check className="text-gold shrink-0" size={24} strokeWidth={4} />
                                     <div>
-                                        <p className="font-black text-white text-lg leading-none mb-2 uppercase">צמיחת הון (Equity)</p>
+                                        <p className="font-black text-white text-lg leading-none mb-2 uppercase">צמיחת הון (הון עצמי)</p>
                                         <p className="text-sm text-blue-100/50">טופ 3 בארה"ב בעליות ערך. הנכס עובד בשבילך גם בלי שכירות.</p>
                                     </div>
                                 </li>

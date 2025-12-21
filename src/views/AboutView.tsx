@@ -34,7 +34,7 @@ const AboutView: React.FC = () => (
                         {FOUNDERS.map((f, i) => (
                             <div key={i} className="bg-navy p-10 rounded-[60px] text-white text-center shadow-3xl relative overflow-hidden group">
                                 <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                                <img src={f.image} className="w-44 h-44 rounded-full mx-auto mb-10 border-4 border-gold/30 shadow-2xl object-cover relative group-hover:scale-105 transition-transform" alt="" />
+                                <img src={f.image} className="w-44 h-44 rounded-full mx-auto mb-10 border-4 border-gold/30 shadow-2xl object-cover relative group-hover:scale-105 transition-transform" style={{ objectPosition: f.objectPosition }} alt="" />
                                 <h3 className="text-3xl font-black text-white mb-2 tracking-tighter uppercase uppercase leading-none">{f.name}</h3>
                                 <p className="text-gold font-bold text-sm uppercase tracking-[0.3em] mb-8">{f.role}</p>
                                 <p className="text-[14px] text-blue-100/60 font-medium leading-relaxed italic mb-10 opacity-70 group-hover:opacity-100 transition-opacity">"{f.bio}"</p>

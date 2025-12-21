@@ -51,10 +51,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage, setIsMenuO
                 </div>
 
                 <div className="cursor-pointer flex items-center gap-3" onClick={() => setCurrentPage('home' as PageId)}>
-                    <div className="flex flex-col items-center">
-                        <div className="text-xl md:text-2xl font-black uppercase tracking-[0.1em] leading-none text-navy">SKYLINE</div>
-                        <div className="text-[12px] font-bold tracking-[0.4em] mt-1 border-t border-navy/20 pt-1 w-full text-center text-gold">GROUP</div>
-                    </div>
+                    <img src="/skyline-group-texas/images/navbar_logo.png" alt="Skyline Group Texas" className="h-10 md:h-12 w-auto object-contain" />
                 </div>
             </div>
         </nav>

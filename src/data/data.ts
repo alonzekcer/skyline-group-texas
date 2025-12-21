@@ -41,7 +41,7 @@ export const DEALS: Deal[] = [
         yearBuilt: '2006',
         sqft: '1,879',
         lotSize: '5,663',
-        image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        image: '/skyline-group-texas/images/deal1.jpg',
         badge: 'נכס מוכח',
         tags: ['4 חדרי שינה', '2 חדרי רחצה'],
         equity: '$62,000+'
@@ -59,7 +59,7 @@ export const DEALS: Deal[] = [
         yearBuilt: '2005',
         sqft: '3,456',
         lotSize: '5,486',
-        image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        image: '/skyline-group-texas/images/deal4.jpg',
         badge: 'הזדמנות נדירה',
         tags: ['5 חדרי שינה', '2.5 חדרי רחצה'],
         equity: '$75,000+'
@@ -77,7 +77,7 @@ export const DEALS: Deal[] = [
         yearBuilt: '2001',
         sqft: '2,100',
         lotSize: '6,098',
-        image: 'https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        image: '/skyline-group-texas/images/deal2.jpg',
         badge: 'הזדמנות להשבחה',
         tags: ['4 חדרי שינה', '2.5 חדרי רחצה', 'בריכה'],
         equity: '$75,000+'
@@ -95,10 +95,28 @@ export const DEALS: Deal[] = [
         yearBuilt: '2025',
         sqft: '1,880',
         lotSize: '5,050',
-        image: 'https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1600',
+        image: '/skyline-group-texas/images/deal5.jpg',
         badge: 'בנייה חדשה 2025',
         tags: ['4 חדרי שינה', '2 חדרי רחצה'],
         equity: '$50,000+'
+    },
+    {
+        id: '5',
+        address: 'Wavecrest ct, Little Elm 75068',
+        price: '$275,000',
+        marketValue: '$330,000',
+        rent: '$3,200',
+        roi: '12.5%',
+        cashFlow: '$950',
+        rehab: '$19,000',
+        piti: '$2,250',
+        yearBuilt: '2003',
+        sqft: '2,318',
+        lotSize: '7,884',
+        image: '/skyline-group-texas/images/deal3.jpg',
+        badge: 'עסקה חדשה',
+        tags: ['4 חדרי שינה', '3 חדרי רחצה'],
+        equity: '$55,000+'
     }
 ];
 
@@ -106,14 +124,15 @@ export const FOUNDERS: Founder[] = [
     {
         name: 'בעז פנחס',
         role: 'מייסד ומנהל',
-        image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800',
+        image: '/skyline-group-texas/images/boaz.jpg',
         bio: 'בעל ניסיון עשיר בליווי משקיעים ואופטימיזציה פיננסית בשוק הנדל"ן האמריקאי.',
-        phone: '052-6868-718'
+        phone: '052-6868-718',
+        objectPosition: 'top'
     },
     {
         name: 'נוי קריוק',
         role: 'מייסד ומנהל',
-        image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800',
+        image: '/skyline-group-texas/images/noy.jpg',
         bio: 'מומחה לאיתור עסקאות מתחת למחיר השוק וניהול מערכי שיפוץ והשבחה בטקסס.',
         phone: '050-828-1215'
     }
