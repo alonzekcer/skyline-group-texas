@@ -39,32 +39,32 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                         <p className="text-xl text-slate-500 font-medium italic mb-10 leading-relaxed">
                             דאלאס-פורט וורת' (DFW) היא לא רק עיר, היא כוח כלכלי עולמי. המטרופולין היציב והחזק ביותר בארה"ב להשקעה.
                         </p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
-                            <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-12 items-center">
+                            <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100 h-full">
                                 <Globe className="text-gold mb-4" size={32} />
                                 <h4 className="text-xl font-black text-navy mb-2">כלכלה גלובלית</h4>
                                 <p className="text-sm text-slate-500 leading-relaxed">ה-GDP של DFW הוא 744.5 מיליארד דולר, מה שהופך אותה לכלכלה ה-20 בגודלה בעולם.</p>
                             </div>
-                            <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                            <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100 h-full">
                                 <Briefcase className="text-gold mb-4" size={32} />
                                 <h4 className="text-xl font-black text-navy mb-2">מרכז Fortune 500</h4>
                                 <p className="text-sm text-slate-500 leading-relaxed">נהירה של חברות ענק מכל ארה"ב בזכות מיסוי נמוך ואיכות חיים.</p>
                             </div>
-                        </div>
 
-                        {/* Integrated Small Map with Pulse */}
-                        <div className="relative group max-w-xs md:max-w-sm mr-auto lg:mr-0">
-                            <div className="absolute inset-0 bg-gold/5 rounded-full blur-[60px] opacity-20 transform group-hover:scale-110 transition-transform"></div>
-                            <div className="relative z-10">
-                                <img
-                                    src="/skyline-group-texas/images/us_map.png"
-                                    className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity"
-                                    alt="DFW Location Map"
-                                />
-                                <div className="absolute top-[63.5%] left-[49.5%] -translate-x-1/2 -translate-y-1/2">
-                                    <div className="relative flex h-4 w-4">
-                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
-                                        <span className="relative inline-flex rounded-full h-4 w-4 bg-gold shadow-[0_0_10px_rgba(245,196,81,0.8)]"></span>
+                            {/* Integrated Small Map with Pulse */}
+                            <div className="relative group w-full py-4 xl:py-0">
+                                <div className="absolute inset-0 bg-gold/5 rounded-full blur-[60px] opacity-20 transform group-hover:scale-110 transition-transform"></div>
+                                <div className="relative z-10">
+                                    <img
+                                        src="/skyline-group-texas/images/us_map.png"
+                                        className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                                        alt="DFW Location Map"
+                                    />
+                                    <div className="absolute top-[63.5%] left-[49.5%] -translate-x-1/2 -translate-y-1/2">
+                                        <div className="relative flex h-4 w-4">
+                                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
+                                            <span className="relative inline-flex rounded-full h-4 w-4 bg-gold shadow-[0_0_10px_rgba(245,196,81,0.8)]"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
