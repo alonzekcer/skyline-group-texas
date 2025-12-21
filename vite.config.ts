@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: mode === 'production' ? '/skyline-group-texas/' : '/',
+    base: process.env.NETLIFY ? '/' : (mode === 'production' ? '/skyline-group-texas/' : '/'),
     server: {
       port: 3000,
       host: '0.0.0.0',
