@@ -1,4 +1,4 @@
-import{c as t,j as e,r}from"./index-AVXTJXRC.js";import{M as a}from"./message-circle-CKupfHux.js";/**
+import{c as t,j as e,r}from"./index-BVIq4t75.js";import{M as a}from"./message-circle-CkfdwNr6.js";/**
  * @license lucide-react v0.562.0 - ISC
  *
  * This source code is licensed under the ISC license.
