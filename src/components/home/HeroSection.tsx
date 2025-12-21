@@ -16,7 +16,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToContact }) => {
             <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
             <div className="container mx-auto px-6 relative text-center text-white h-full flex flex-col justify-center max-h-full">
                 <div className="flex flex-col items-center mb-4 md:mb-6 fade-in-up" style={{ animationDelay: '0.05s' }}>
-                    <img src="/images/hero_logo.png" alt="Skyline Group" className="h-20 md:h-32 lg:h-40 w-auto object-contain drop-shadow-2xl" />
+                    <img src="images/hero_logo.png" alt="Skyline Group" className="h-20 md:h-32 lg:h-40 w-auto object-contain drop-shadow-2xl" />
                 </div>
 
                 <h1 className="text-3xl md:text-5xl lg:text-7xl font-black mb-4 md:mb-6 leading-[1.1] tracking-tighter fade-in-up">

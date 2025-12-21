@@ -56,7 +56,7 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                                 <div className="absolute inset-0 bg-gold/5 rounded-full blur-[60px] opacity-20 transform group-hover:scale-110 transition-transform"></div>
                                 <div className="relative z-10">
                                     <img
-                                        src="/images/us_map.png"
+                                        src="images/us_map.png"
                                         className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity"
                                         alt="DFW Location Map"
                                     />
