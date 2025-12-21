@@ -19,13 +19,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToContact }) => {
                     <img src="/skyline-group-texas/images/hero_logo.png" alt="Skyline Group" className="h-32 md:h-48 w-auto object-contain drop-shadow-2xl" />
                 </div>
 
-                <h1 className="text-5xl md:text-8xl font-black mb-8 leading-[1] tracking-tighter fade-in-up">
-                    אימפריית נדל״ן ב-DFW: <br />
-                    <span className="sketch-highlight text-gold">בשיטה ייחודית</span>
+                <h1 className="text-4xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter fade-in-up">
+                    רשת השקעות ויזמות נדל״ן <br />
+                    <span className="text-gold text-3xl md:text-5xl">טקסס ארה״ב</span>
                 </h1>
-                <p className="text-xl md:text-3xl font-light mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
-                    ארכיטקטורה של עושר: בונים עבורכם פורטפוליו נכסי פרימיום ב-DFW עם ליווי שטח מקצועי,
-                    דיוק יזמי וביטחון פיננסי מקסימלי שמתרגם הון להכנסה פסיבית קבועה.
+                <p className="text-lg md:text-2xl font-medium mb-12 max-w-5xl mx-auto opacity-95 leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
+                    בונים יחד פורטפוליו נדל״ן באיזור דאלאס-פורט וורת׳ - <br className="hidden md:block" />
+                    בתים חדשים או חדישים, באיזורים חזקים, איכותיים ונקיים מפשיעה, <br className="hidden md:block" />
+                    עם ביקוש קשיח לשכירות ועליות ערך מוכחות לאורך שנים.
+                </p>
+                <p className="text-xl md:text-3xl font-black text-gold mb-12 max-w-4xl mx-auto leading-relaxed fade-in-up uppercase tracking-tight" style={{ animationDelay: '0.3s' }}>
+                    השקעה בדולרים, נכס מוחשי בבעלותכם <br className="hidden md:block" />
+                    וצוות מקומי שמכיר כל רחוב
                 </p>
                 <div className="flex flex-col sm:flex-row gap-5 justify-center fade-in-up" style={{ animationDelay: '0.4s' }}>
                     <button
