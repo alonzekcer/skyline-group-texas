@@ -52,40 +52,42 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                             </div>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 w-full h-[450px] bg-slate-900 rounded-[60px] p-12 shadow-3xl relative overflow-hidden">
+                    <div className="lg:w-1/2 w-full min-h-[520px] bg-slate-900 rounded-[60px] p-10 md:p-12 shadow-3xl relative overflow-hidden flex flex-col">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-gold/10 rounded-full blur-[100px] -mr-32 -mt-32"></div>
                         <h4 className="text-2xl font-black text-white mb-8 tracking-tighter">צמיחת מחירי הבתים (מאז 2000)</h4>
-                        <ResponsiveContainer width="100%" height="70%">
-                            <AreaChart data={DEFW_STATS}>
-                                <defs>
-                                    <linearGradient id="colorPrice" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="5%" stopColor="#f5c451" stopOpacity={0.3} />
-                                        <stop offset="95%" stopColor="#f5c451" stopOpacity={0} />
-                                    </linearGradient>
-                                </defs>
-                                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#ffffff10" />
-                                <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#94a3b8', fontSize: 12, fontWeight: 'bold' }} dy={10} />
-                                <YAxis hide />
-                                <ReTooltip
-                                    contentStyle={{ borderRadius: '16px', border: 'none', background: '#0c1230', color: '#fff' }}
-                                    itemStyle={{ color: '#f5c451' }}
-                                    formatter={(value: number) => [`$${value.toLocaleString()}`, 'מחיר ממוצע']}
-                                />
-                                <Area type="monotone" dataKey="price" stroke="#f5c451" strokeWidth={4} fillOpacity={1} fill="url(#colorPrice)" />
-                            </AreaChart>
-                        </ResponsiveContainer>
+                        <div className="flex-1 h-[250px]">
+                            <ResponsiveContainer width="100%" height="100%">
+                                <AreaChart data={DEFW_STATS}>
+                                    <defs>
+                                        <linearGradient id="colorPrice" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="5%" stopColor="#f5c451" stopOpacity={0.3} />
+                                            <stop offset="95%" stopColor="#f5c451" stopOpacity={0} />
+                                        </linearGradient>
+                                    </defs>
+                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#ffffff10" />
+                                    <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#94a3b8', fontSize: 12, fontWeight: 'bold' }} dy={10} />
+                                    <YAxis hide />
+                                    <ReTooltip
+                                        contentStyle={{ borderRadius: '16px', border: 'none', background: '#0c1230', color: '#fff' }}
+                                        itemStyle={{ color: '#f5c451' }}
+                                        formatter={(value: number) => [`$${value.toLocaleString()}`, 'מחיר ממוצע']}
+                                    />
+                                    <Area type="monotone" dataKey="price" stroke="#f5c451" strokeWidth={4} fillOpacity={1} fill="url(#colorPrice)" />
+                                </AreaChart>
+                            </ResponsiveContainer>
+                        </div>
                         <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
                             <div className="text-center">
                                 <p className="text-gold font-black text-2xl">+235%</p>
-                                <p className="text-white/40 text-[11px] uppercase font-bold leading-tight">עליית ערך ממוצעת ב-25 השנים האחרונות</p>
+                                <p className="text-blue-100/60 text-[11px] uppercase font-bold leading-tight">עליית ערך ממוצעת ב-25 השנים האחרונות</p>
                             </div>
                             <div className="text-center">
                                 <p className="text-gold font-black text-2xl">#1</p>
-                                <p className="text-white/40 text-[11px] uppercase font-bold leading-tight">המטרופולין הצומח ביותר בכל ארה״ב</p>
+                                <p className="text-blue-100/60 text-[11px] uppercase font-bold leading-tight">המטרופולין הצומח ביותר בכל ארה״ב</p>
                             </div>
                             <div className="text-center">
                                 <p className="text-gold font-black text-2xl">AAA</p>
-                                <p className="text-white/40 text-[11px] uppercase font-bold leading-tight">דירוג חוסן פיננסי הגבוה ביותר לעירייה</p>
+                                <p className="text-blue-100/60 text-[11px] uppercase font-bold leading-tight">דירוג חוסן פיננסי הגבוה ביותר לעירייה</p>
                             </div>
                         </div>
                     </div>
