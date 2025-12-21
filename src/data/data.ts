@@ -97,7 +97,7 @@ export const DEALS: Deal[] = [
         sqft: '1,880',
         lotSize: '5,050',
         image: '/skyline-group-texas/images/deal5.jpg',
-        badge: 'עסקה שהושלמה',
+        badge: 'בנייה 2025',
         tags: ['4 חדרי שינה', '2 חדרי רחצה'],
         equity: '$50,000+'
     },
