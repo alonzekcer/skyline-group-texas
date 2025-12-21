@@ -18,10 +18,22 @@ const WhyDFWSection: React.FC<WhyDFWSectionProps> = ({ onNavigate }) => {
                         </p>
                         <button
                             onClick={() => onNavigate('market')}
-                            className="inline-flex items-center gap-2 text-navy font-black text-lg hover:text-gold transition-colors group"
+                            className="inline-flex items-center gap-2 text-navy font-black text-lg hover:text-gold transition-colors group mb-12"
                         >
                             גלו את כל הנתונים <ArrowLeft className="group-hover:-translate-x-1 transition-transform" size={20} />
                         </button>
+
+                        <div className="relative mt-4 group">
+                            <div className="absolute inset-0 bg-gold/5 rounded-[2rem] blur-2xl transform group-hover:scale-110 transition-transform duration-700"></div>
+                            <div className="relative bg-slate-50 p-4 rounded-[2.5rem] border border-slate-100 shadow-sm overflow-hidden group-hover:shadow-xl transition-all duration-500">
+                                <img
+                                    src="/skyline-group-texas/images/us_map.png"
+                                    alt="USA Map - DFW Focus"
+                                    className="w-full h-auto rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-700"
+                                />
+                                <div className="absolute inset-0 pointer-events-none border-2 border-gold/0 group-hover:border-gold/10 rounded-[2.5rem] transition-all duration-500"></div>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
