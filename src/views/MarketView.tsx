@@ -109,16 +109,16 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                 </div>
 
                 {/* USA MAP WITH DFW PULSE */}
-                <div className="mb-32 relative">
-                    <div className="max-w-4xl mx-auto text-center mb-12">
-                        <h2 className="text-3xl md:text-5xl font-black text-navy mb-4">מיקום אסטרטגי בלב ארה״ב</h2>
-                        <p className="text-lg text-slate-500">דאלאס-פורט וורת׳ מהווה צומת דרכים מרכזי ומרכז לוגיסטי ותעסוקתי מהחשובים ביבשת.</p>
+                <div className="mb-16 relative">
+                    <div className="max-w-4xl mx-auto text-center mb-6">
+                        <h2 className="text-2xl md:text-3xl font-black text-navy mb-2">מיקום אסטרטגי בלב ארה״ב</h2>
+                        <p className="text-md text-slate-500">דאלאס-פורט וורת׳ מהווה צומת דרכים מרכזי ומרכז לוגיסטי ותעסוקתי מהחשובים ביבשת.</p>
                     </div>
 
-                    <div className="relative group flex justify-center py-10">
-                        <div className="absolute inset-0 bg-gold/5 rounded-full blur-[120px] transform group-hover:scale-110 transition-transform duration-700 opacity-30 group-hover:opacity-60"></div>
+                    <div className="relative group flex justify-center py-4">
+                        <div className="absolute inset-0 bg-gold/5 rounded-full blur-[80px] transform group-hover:scale-110 transition-transform duration-700 opacity-30 group-hover:opacity-60"></div>
 
-                        <div className="relative z-10 w-full max-w-lg px-6 md:px-0">
+                        <div className="relative z-10 w-full max-w-md px-6 md:px-0">
                             <img
                                 src="/skyline-group-texas/images/us_map.png"
                                 alt="USA Map - DFW Strategic Location"
@@ -127,9 +127,9 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
 
                             {/* Animated Gold Dot for DFW */}
                             <div className="absolute top-[63.5%] left-[49.5%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                                <div className="relative flex h-5 w-5 md:h-8 md:w-8">
+                                <div className="relative flex h-4 w-4 md:h-6 md:w-6">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-5 w-5 md:h-8 md:w-8 bg-gold shadow-[0_0_20px_rgba(245,196,81,0.9)] border-2 border-white/30"></span>
+                                    <span className="relative inline-flex rounded-full h-4 w-4 md:h-6 md:w-6 bg-gold shadow-[0_0_15px_rgba(245,196,81,0.9)] border-2 border-white/30"></span>
                                 </div>
                             </div>
                         </div>
