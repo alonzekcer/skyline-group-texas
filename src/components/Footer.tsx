@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Facebook } from 'lucide-react';
+import { Instagram, MessageCircle } from 'lucide-react';
 import { PageId } from '../types';
 
 interface FooterProps {
@@ -29,8 +29,12 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                         ))}
                     </div>
                     <div className="flex gap-4">
-                        <Instagram className="cursor-pointer hover:text-gold transition-colors" />
-                        <Facebook className="cursor-pointer hover:text-gold transition-colors" />
+                        <a href="https://www.instagram.com/boazpinhas?igsh=MXRtb2xvMTRlMHJ2ag%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+                            <Instagram />
+                        </a>
+                        <a href="https://chat.whatsapp.com/HfJZ2oe98xSIDg7FTSzhUB?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+                            <MessageCircle />
+                        </a>
                     </div>
                 </div>
                 <div className="text-center text-[12px] text-white/40 italic max-w-4xl mx-auto border-t border-white/5 pt-8">
