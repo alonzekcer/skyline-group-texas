@@ -25,12 +25,12 @@ const WhyDFWSection: React.FC<WhyDFWSectionProps> = ({ onNavigate }) => {
                             </button>
                         </div>
 
-                        <div className="mt-auto relative group">
-                            <div className="absolute inset-0 bg-gold/5 rounded-full blur-3xl transform group-hover:scale-110 transition-transform duration-700 opacity-0 group-hover:opacity-100"></div>
+                        <div className="mt-auto relative group flex justify-center">
+                            <div className="absolute inset-0 bg-gold/5 rounded-full blur-3xl transform group-hover:scale-110 transition-transform duration-700 opacity-0 group-hover:opacity-50"></div>
                             <img
                                 src="/skyline-group-texas/images/us_map.png"
                                 alt="USA Map - DFW Focus"
-                                className="relative z-10 w-full h-auto object-contain transition-all duration-700 group-hover:scale-[1.02] filter drop-shadow-2xl"
+                                className="relative z-10 w-[85%] h-auto object-contain transition-all duration-700 group-hover:scale-[1.05] filter drop-shadow-xl"
                             />
                         </div>
                     </div>
