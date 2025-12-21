@@ -14,10 +14,10 @@ const CourseView: React.FC<CourseViewProps> = ({ onNavigate }) => (
                 < GraduationCap size={64} />
             </div>
             <span className="text-gold font-black uppercase tracking-[0.5em] text-sm block mb-6 animate-pulse italic">COMING SOON 2025</span>
-            <h1 className="text-5xl md:text-8xl font-black mb-10 leading-tight tracking-tighter uppercase">THE DFW <br /> <span className="text-gold">MASTERCLASS</span></h1>
+            <h1 className="text-5xl md:text-8xl font-black mb-10 leading-tight tracking-tighter uppercase">THE USA <br /> <span className="text-gold">MASTERCLASS</span></h1>
             <p className="text-xl md:text-2xl text-blue-100/50 max-w-2xl mx-auto mb-16 font-light italic leading-relaxed">
                 אנו הופכים את הידע שצברנו בשטח לקורס דיגיטלי מקיף. <br />
-                איך לאתר, לנתח, לרכוש ולנהל נכסים ב-DFW באופן עצמאי ומניב.
+                איך לאתר, לנתח, לרכוש ולנהל נכסים בארה״ב באופן עצמאי ומניב.
             </p>
             <button onClick={() => onNavigate('contact')} className="bg-gold text-navy px-16 py-6 rounded-3xl font-black text-2xl shadow-2xl hover:scale-105 transition-all flex items-center gap-4 mx-auto">
                 הצטרפו לרשימת ההמתנה <ArrowLeft className="rotate-180" size={28} />
