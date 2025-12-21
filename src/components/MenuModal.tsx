@@ -38,7 +38,7 @@ const MenuModal: React.FC<MenuModalProps> = ({ isMenuOpen, setIsMenuOpen, curren
                     onClick={() => {
                         setIsMenuOpen(false);
                         if (currentPage === 'home') {
-                            document.getElementById('home-contact')?.scrollIntoView({ behavior: 'smooth' });
+                            document.getElementById('home-contact')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
                         } else {
                             setCurrentPage('contact' as PageId);
                         }

@@ -9,9 +9,13 @@
   --gold: #D4AF37;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Offset for the navbar */
+}
+
 body {
   font-family: 'Assistant', 'Rubik', sans-serif;
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
 }
 

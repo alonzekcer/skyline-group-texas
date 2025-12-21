@@ -15,7 +15,7 @@ interface HomeViewProps {
 const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
 
     const scrollToContact = () => {
-        document.getElementById('home-contact')?.scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('home-contact')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     };
 
     return (
