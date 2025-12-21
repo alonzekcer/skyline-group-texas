@@ -10,33 +10,32 @@ const WhyDFWSection: React.FC<WhyDFWSectionProps> = ({ onNavigate }) => {
     return (
         <section className="py-24 bg-white">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col lg:flex-row gap-16 items-start">
-                    <div className="lg:w-1/3 text-right">
-                        <h2 className="text-4xl md:text-5xl font-black text-navy mb-6 leading-tight">למה דווקא DFW?</h2>
-                        <p className="text-xl text-slate-500 font-medium leading-relaxed mb-8">
-                            מטרופולין דאלאס-פורט וורת' היא הכלכלה ה-20 בגודלה בעולם. עם הגירה חיובית מטאורית ושוק תעסוקה חזק, זהו היעד המושלם להשקעה יציבה.
-                        </p>
-                        <button
-                            onClick={() => onNavigate('market')}
-                            className="inline-flex items-center gap-2 text-navy font-black text-lg hover:text-gold transition-colors group mb-12"
-                        >
-                            גלו את כל הנתונים <ArrowLeft className="group-hover:-translate-x-1 transition-transform" size={20} />
-                        </button>
+                <div className="flex flex-col lg:flex-row gap-16 items-stretch">
+                    <div className="lg:w-1/2 text-right flex flex-col">
+                        <div>
+                            <h2 className="text-4xl md:text-5xl font-black text-navy mb-6 leading-tight">למה דווקא DFW?</h2>
+                            <p className="text-xl text-slate-500 font-medium leading-relaxed mb-8">
+                                מטרופולין דאלאס-פורט וורת' היא הכלכלה ה-20 בגודלה בעולם. עם הגירה חיובית מטאורית ושוק תעסוקה חזק, זהו היעד המושלם להשקעה יציבה.
+                            </p>
+                            <button
+                                onClick={() => onNavigate('market')}
+                                className="inline-flex items-center gap-2 text-navy font-black text-lg hover:text-gold transition-colors group mb-12"
+                            >
+                                גלו את כל הנתונים <ArrowLeft className="group-hover:-translate-x-1 transition-transform" size={20} />
+                            </button>
+                        </div>
 
-                        <div className="relative mt-4 group">
-                            <div className="absolute inset-0 bg-gold/5 rounded-[2rem] blur-2xl transform group-hover:scale-110 transition-transform duration-700"></div>
-                            <div className="relative bg-slate-50 p-4 rounded-[2.5rem] border border-slate-100 shadow-sm overflow-hidden group-hover:shadow-xl transition-all duration-500">
-                                <img
-                                    src="/skyline-group-texas/images/us_map.png"
-                                    alt="USA Map - DFW Focus"
-                                    className="w-full h-auto rounded-2xl transform group-hover:scale-[1.02] transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 pointer-events-none border-2 border-gold/0 group-hover:border-gold/10 rounded-[2.5rem] transition-all duration-500"></div>
-                            </div>
+                        <div className="mt-auto relative group">
+                            <div className="absolute inset-0 bg-gold/5 rounded-full blur-3xl transform group-hover:scale-110 transition-transform duration-700 opacity-0 group-hover:opacity-100"></div>
+                            <img
+                                src="/skyline-group-texas/images/us_map.png"
+                                alt="USA Map - DFW Focus"
+                                className="relative z-10 w-full h-auto object-contain transition-all duration-700 group-hover:scale-[1.02] filter drop-shadow-2xl"
+                            />
                         </div>
                     </div>
 
-                    <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+                    <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                         <div className="p-8 bg-slate-50 rounded-[2.5rem] border border-slate-100 flex flex-col items-center text-center hover:shadow-xl transition-all group">
                             <div className="w-16 h-16 bg-navy text-gold rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-3 transition-transform">
                                 <Users size={32} />
