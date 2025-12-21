@@ -14,6 +14,7 @@ const MenuModal: React.FC<MenuModalProps> = ({ isMenuOpen, setIsMenuOpen, curren
         { id: 'home', label: 'דף הבית' },
         { id: 'market', label: 'למה דווקא DFW?' },
         { id: 'section8', label: 'Section 8' },
+        { id: 'faq', label: 'שאלות ותשובות' },
         { id: 'course', label: 'קורס (בקרוב...)' },
         { id: 'about', label: 'אודותינו' }
     ];

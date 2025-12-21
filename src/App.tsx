@@ -11,6 +11,7 @@ const Section8View = React.lazy(() => import('./views/Section8View'));
 const AboutView = React.lazy(() => import('./views/AboutView'));
 const CourseView = React.lazy(() => import('./views/CourseView'));
 const ContactView = React.lazy(() => import('./views/ContactView'));
+const FAQView = React.lazy(() => import('./views/FAQView'));
 
 const LoadingFallback = () => (
   <div className="flex items-center justify-center min-h-[50vh]">
@@ -54,6 +55,7 @@ const App: React.FC = () => {
       case 'course': return <CourseView onNavigate={setPageAndScroll} />;
       case 'about': return <AboutView onNavigate={setPageAndScroll} />;
       case 'contact': return <ContactView onNavigate={setPageAndScroll} />;
+      case 'faq': return <FAQView onNavigate={setPageAndScroll} />;
       default: return <HomeView onNavigate={setPageAndScroll} />;
     }
   };

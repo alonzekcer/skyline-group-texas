@@ -1,5 +1,5 @@
 
-export type PageId = 'home' | 'market' | 'section8' | 'course' | 'about' | 'contact';
+export type PageId = 'home' | 'market' | 'section8' | 'course' | 'about' | 'contact' | 'faq';
 
 export interface Deal {
   id: string;
