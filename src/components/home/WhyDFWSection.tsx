@@ -31,7 +31,7 @@ const WhyDFWSection: React.FC<WhyDFWSectionProps> = ({ onNavigate }) => {
                             {/* The Map */}
                             <div className="relative z-10 w-[85%]">
                                 <img
-                                    src="/skyline-group-texas/images/us_map.png"
+                                    src="/images/us_map.png"
                                     alt="USA Map - DFW Focus"
                                     className="w-full h-auto object-contain transition-all duration-700 group-hover:scale-[1.05] filter drop-shadow-xl"
                                 />
