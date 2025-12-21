@@ -217,7 +217,7 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                                 </li>
                             </ul>
                             <div className="mt-12 p-6 bg-gold rounded-3xl text-navy font-black text-center text-lg uppercase tracking-tighter">
-                                נכס איכותי ב-DFW + Section 8 = תשואה דו-ספרתית
+                                נכס איכותי בדאלאס בשילוב סקשן 8 = תשואה דו-ספרתית
                             </div>
                         </div>
                     </div>

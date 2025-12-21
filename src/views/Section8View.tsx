@@ -31,7 +31,7 @@ const Section8View: React.FC<Section8ViewProps> = ({ onNavigate }) => (
                             </button>
                         </div>
                         <p className="text-xl text-slate-500 mb-10 leading-relaxed font-medium">
-                            המודל של Skyline Group Texas משלב השכרה באזורי ביקוש (Rating A/B) עם וואוצ'ר ממשלתי המבטיח תשואה יציבה וגבוהה גם כשהשוק משתנה.
+                            המודל של Skyline Group משלב השכרה באזורי ביקוש (Rating A/B) עם וואוצ'ר ממשלתי המבטיח תשואה יציבה וגבוהה גם כשהשוק משתנה.
                         </p>
                         <div className="space-y-8">
                             <div className="flex gap-6 items-start p-8 bg-slate-50 rounded-[40px] border border-slate-100">

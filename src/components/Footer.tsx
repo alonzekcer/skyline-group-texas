@@ -34,7 +34,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                     </div>
                 </div>
                 <div className="text-center text-[12px] text-white/40 italic max-w-4xl mx-auto border-t border-white/5 pt-8">
-                    <p className="mb-2">Skyline Group Texas ©️ כל הזכויות שמורות.</p>
+                    <p className="mb-2">Skyline Group ©️ כל הזכויות שמורות.</p>
                     <p>הדוגמאות והנתונים בדף זה מוצגים למטרות המחשה בלבד ואינם מהווים הבטחה לתשואה, המלצה לביצוע עסקה או ייעוץ השקעות, פיננסי, משפטי או מס. השקעות נדל"ן טומנות בחובן סיכונים ומומלץ להיוועץ באנשי מקצוע מוסמכים לפני כל השקעה.</p>
                 </div>
             </div>

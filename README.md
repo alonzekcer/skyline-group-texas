@@ -1,4 +1,4 @@
-# Skyline Group Texas - Landing Page
+# Skyline Group - Landing Page
 
 Real estate investment landing page for Texas DFW market.
 

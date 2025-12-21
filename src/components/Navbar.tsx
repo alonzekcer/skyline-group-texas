@@ -51,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage, setIsMenuO
                 </div>
 
                 <div className="cursor-pointer flex items-center gap-3" onClick={() => setCurrentPage('home' as PageId)}>
-                    <img src="/skyline-group-texas/images/navbar_logo.png" alt="Skyline Group Texas" className="h-10 md:h-12 w-auto object-contain" />
+                    <img src="/skyline-group-texas/images/navbar_logo.png" alt="Skyline Group" className="h-10 md:h-12 w-auto object-contain" />
                 </div>
             </div>
         </nav>
