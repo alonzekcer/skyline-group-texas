@@ -20,7 +20,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToContact }) => {
                 </div>
 
                 <h1 className="text-4xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter fade-in-up">
-                    רשת השקעות ויזמות נדל״ן <br />
+                    חברת השקעות ויזמות נדל״ן <br />
                     <span className="text-gold text-3xl md:text-5xl">טקסס ארה״ב</span>
                 </h1>
                 <p className="text-lg md:text-2xl font-medium mb-12 max-w-5xl mx-auto opacity-95 leading-relaxed fade-in-up" style={{ animationDelay: '0.2s' }}>
