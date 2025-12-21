@@ -44,15 +44,15 @@ const Section8View: React.FC<Section8ViewProps> = ({ onNavigate }) => (
                             <div className="flex gap-6 items-start p-8 bg-slate-50 rounded-[40px] border border-slate-100">
                                 <div className="w-12 h-12 bg-navy text-gold rounded-2xl flex items-center justify-center shrink-0 shadow-xl"><Clock size={24} /></div>
                                 <div>
-                                    <h5 className="text-xl font-black text-navy uppercase mb-2 leading-none">יציבות שאין לה מקבילה</h5>
-                                    <p className="text-[15px] text-slate-500 font-medium">דיירי Section 8 נשארים בנכס 7 שנים בממוצע. יציבות זו חוסכת עלויות תיווך, צביעה ושיפוצים של תחלופת דיירים גבוהה.</p>
+                                    <h5 className="text-xl font-black text-navy uppercase mb-2 leading-none">יציבות שאין שני לה</h5>
+                                    <p className="text-[15px] text-slate-500 font-medium">דיירי Section 8 נשארים בממוצע כ-7 שנים בנכס. יציבות זו חוסכת עלויות אחזקת בית ריק, תיווך ורענון הנכס לצורך תחלופת דיירים.</p>
                                 </div>
                             </div>
                             <div className="flex gap-6 items-start p-8 bg-slate-50 rounded-[40px] border border-slate-100">
                                 <div className="w-12 h-12 bg-navy text-gold rounded-2xl flex items-center justify-center shrink-0 shadow-xl"><TrendingUp size={24} /></div>
                                 <div>
                                     <h5 className="text-xl font-black text-navy uppercase mb-2 leading-none">תשואה עודפת (Excess Yield)</h5>
-                                    <p className="text-[15px] text-slate-500 font-medium">שכר הדירה המאושר ע"י התוכנית לרוב גבוה יותר ממחירי השוק החופשי באותו אזור, מה שמגדיל את התזרים הנקי (Cash Flow).</p>
+                                    <p className="text-[15px] text-slate-500 font-medium">באיזורים שאנו עובדים, שכר הדירה המאושר ע״י התכנית גבוה משמעותית ממחירי השוק החופשי, מה שמגדיל את התזרים הנקי (Cash Flow).</p>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ const Section8View: React.FC<Section8ViewProps> = ({ onNavigate }) => (
                         </div>
 
                         <div className="mt-12 text-center text-blue-100/40 text-[13px] font-bold leading-relaxed uppercase tracking-widest">
-                            *תקציב שנתי בכל ארהב של 32 מיליארד דולר
+                            *תקציב התכנית בשנת 2026- כ-32 מיליארד דולר
                         </div>
                     </div>
                 </div>
