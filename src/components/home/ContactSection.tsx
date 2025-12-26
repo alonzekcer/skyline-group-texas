@@ -42,7 +42,7 @@ const ContactSection: React.FC = () => {
             <div className="container mx-auto px-6">
                 <div className="max-w-5xl mx-auto bg-navy rounded-3xl md:rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
                     {/* Left Side: Content */}
-                    <div className="lg:w-5/12 bg-navy p-8 md:p-16 text-white relative flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5">
+                    <div className="lg:w-5/12 bg-navy p-6 md:p-16 text-white relative flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.08),transparent)] pointer-events-none"></div>
                         <div className="relative z-10 text-right">
                             <span className="text-gold font-bold uppercase tracking-[0.3em] text-xs mb-4 block leading-none">Let's Talk</span>
@@ -50,19 +50,19 @@ const ContactSection: React.FC = () => {
                                 הגיע הזמן <br />
                                 <span className="text-gold">להשקיע נכון.</span>
                             </h2>
-                            <p className="text-sm md:text-base text-blue-100/70 mb-10 leading-relaxed max-w-sm">
+                            <p className="text-sm md:text-base text-blue-100/70 mb-6 md:mb-10 leading-relaxed max-w-sm">
                                 השאירו פרטים ונחזור אליכם בהקדם עם ניתוח עסקאות מותאם אישית לפרופיל ההשקעה שלכם.
                             </p>
 
                             <div className="space-y-5">
                                 <div className="flex items-center justify-end gap-4 group">
-                                    <span className="text-sm font-bold text-blue-50/90 text-right">קהילה של 1,000+ משקיעים</span>
+                                    <span className="text-[13px] md:text-sm font-bold text-blue-50/90 text-right">קהילה של 1,000+ משקיעים</span>
                                     <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center text-gold border border-white/10 group-hover:bg-gold/10 transition-colors">
                                         <MessageCircle size={18} />
                                     </div>
                                 </div>
                                 <div className="flex items-center justify-end gap-4 group">
-                                    <span className="text-sm font-bold text-blue-50/90 text-right">רשת של 14,000+ דיירים</span>
+                                    <span className="text-[13px] md:text-sm font-bold text-blue-50/90 text-right">רשת של 14,000+ דיירים</span>
                                     <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center text-gold border border-white/10 group-hover:bg-gold/10 transition-colors">
                                         <Users size={18} />
                                     </div>
@@ -72,7 +72,7 @@ const ContactSection: React.FC = () => {
                     </div>
 
                     {/* Right Side: Form */}
-                    <div className="lg:w-7/12 p-8 md:p-16 bg-white flex flex-col justify-center">
+                    <div className="lg:w-7/12 p-6 md:p-16 bg-white flex flex-col justify-center">
                         {status === 'success' ? (
                             <div className="text-center py-12">
                                 <div className="w-20 h-20 bg-green-50 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -88,8 +88,8 @@ const ContactSection: React.FC = () => {
                                 </button>
                             </div>
                         ) : (
-                            <form className="space-y-6" onSubmit={handleSubmit}>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <form className="space-y-4" onSubmit={handleSubmit}>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                                     <div className="space-y-1.5 text-right">
                                         <label className="text-[10px] font-black text-navy/40 uppercase tracking-widest mr-1">Full Name</label>
                                         <input
@@ -97,7 +97,7 @@ const ContactSection: React.FC = () => {
                                             required
                                             value={formData.fullName}
                                             onChange={e => setFormData({ ...formData, fullName: e.target.value })}
-                                            className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 outline-none focus:ring-2 focus:ring-gold/30 focus:bg-white focus:border-gold/50 font-bold text-navy transition-all placeholder:text-slate-300 text-right"
+                                            className="w-full px-5 py-3 md:px-6 md:py-4 rounded-2xl bg-slate-50 border border-slate-100 outline-none focus:ring-2 focus:ring-gold/30 focus:bg-white focus:border-gold/50 font-bold text-navy transition-all placeholder:text-slate-300 text-right text-sm md:text-base"
                                             placeholder="שם מלא"
                                         />
                                     </div>
@@ -108,7 +108,7 @@ const ContactSection: React.FC = () => {
                                             required
                                             value={formData.phone}
                                             onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                                            className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 outline-none focus:ring-2 focus:ring-gold/30 focus:bg-white focus:border-gold/50 font-bold text-navy transition-all placeholder:text-slate-300 text-right"
+                                            className="w-full px-5 py-3 md:px-6 md:py-4 rounded-2xl bg-slate-50 border border-slate-100 outline-none focus:ring-2 focus:ring-gold/30 focus:bg-white focus:border-gold/50 font-bold text-navy transition-all placeholder:text-slate-300 text-right text-sm md:text-base"
                                             placeholder="מספר טלפון"
                                         />
                                     </div>
@@ -121,7 +121,7 @@ const ContactSection: React.FC = () => {
                                         required
                                         value={formData.email}
                                         onChange={e => setFormData({ ...formData, email: e.target.value })}
-                                        className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 outline-none focus:ring-2 focus:ring-gold/30 focus:bg-white focus:border-gold/50 font-bold text-navy transition-all placeholder:text-slate-300 text-right"
+                                        className="w-full px-5 py-3 md:px-6 md:py-4 rounded-2xl bg-slate-50 border border-slate-100 outline-none focus:ring-2 focus:ring-gold/30 focus:bg-white focus:border-gold/50 font-bold text-navy transition-all placeholder:text-slate-300 text-right text-sm md:text-base"
                                         placeholder="your@email.com"
                                     />
                                 </div>
@@ -132,7 +132,7 @@ const ContactSection: React.FC = () => {
                                         <select
                                             value={formData.budget}
                                             onChange={e => setFormData({ ...formData, budget: e.target.value })}
-                                            className="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-100 outline-none focus:ring-2 focus:ring-gold/30 focus:bg-white focus:border-gold/50 font-bold text-navy transition-all appearance-none cursor-pointer text-right"
+                                            className="w-full px-5 py-3 md:px-6 md:py-4 rounded-2xl bg-slate-50 border border-slate-100 outline-none focus:ring-2 focus:ring-gold/30 focus:bg-white focus:border-gold/50 font-bold text-navy transition-all appearance-none cursor-pointer text-right text-sm md:text-base"
                                         >
                                             <option value="50,000-100,000">$50,000 - $100,000</option>
                                             <option value="100,000-150,000">$100,000 - $150,000</option>
