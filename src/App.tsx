@@ -3,6 +3,7 @@ import { PageId } from './types';
 import Navbar from './components/Navbar';
 import MenuModal from './components/MenuModal';
 import Footer from './components/Footer';
+import CookieConsent from './components/CookieConsent';
 
 // Lazy load views for optimization
 const HomeView = React.lazy(() => import('./views/HomeView'));
@@ -82,6 +83,7 @@ const App: React.FC = () => {
       </main>
 
       <Footer setCurrentPage={setPageAndScroll} />
+      <CookieConsent />
     </div>
   );
 };
