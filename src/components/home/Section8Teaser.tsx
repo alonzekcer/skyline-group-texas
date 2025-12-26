@@ -8,7 +8,7 @@ interface Section8TeaserProps {
 
 const Section8Teaser: React.FC<Section8TeaserProps> = ({ onNavigate }) => {
     return (
-        <section className="py-24 bg-navy text-white">
+        <section className="py-16 bg-navy text-white">
             <div className="container mx-auto px-6">
                 <div className="max-w-4xl mx-auto flex flex-col items-center">
                     <div className="text-center">

@@ -3,7 +3,7 @@ import AnimatedCounter from '../AnimatedCounter';
 
 const MetricsSection: React.FC = () => {
     return (
-        <section className="py-24 md:py-32 bg-white relative overflow-hidden">
+        <section className="py-16 md:py-20 bg-white relative overflow-hidden">
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-gold/5 rounded-full blur-[120px] animate-pulse"></div>
                 <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-navy/5 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '2s' }}></div>
@@ -35,9 +35,7 @@ const MetricsSection: React.FC = () => {
                     <div className="hidden md:block w-px h-32 bg-slate-100"></div>
                     <div className="flex flex-col items-center text-center max-w-xs transition-transform duration-500 hover:scale-105">
                         <div className="relative mb-6">
-                            <div className="text-6xl md:text-7xl font-black text-navy tracking-tighter mb-4">
-                                <AnimatedCounter target={2800} prefix="~$" />
-                            </div>
+                            <AnimatedCounter target={3000} prefix="~$" />
                         </div>
                         <div className="space-y-2">
                             <p className="text-xl md:text-2xl font-bold text-slate-800 leading-tight">שכירות חודשית ממוצעת</p>

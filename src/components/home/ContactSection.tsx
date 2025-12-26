@@ -38,7 +38,7 @@ const ContactSection: React.FC = () => {
     };
 
     return (
-        <section id="home-contact" className="py-24 bg-white">
+        <section id="home-contact" className="py-16 bg-white">
             <div className="container mx-auto px-6">
                 <div className="max-w-5xl mx-auto bg-navy rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
                     {/* Left Side: Content */}

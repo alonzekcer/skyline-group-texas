@@ -8,6 +8,13 @@ interface CourseViewProps {
 
 const CourseView: React.FC<CourseViewProps> = ({ onNavigate }) => (
     <section className="min-h-[85vh] bg-slate-900 flex items-center justify-center text-white p-6 relative overflow-hidden">
+        <button
+            onClick={() => onNavigate('home')}
+            className="absolute top-8 left-8 flex items-center gap-2 text-white/40 hover:text-gold transition-colors font-bold z-20 group"
+        >
+            <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
+            <span>חזרה לדף הבית</span>
+        </button>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(245,196,81,0.05),_transparent)] pointer-events-none" />
         <div className="max-w-5xl w-full text-center relative">
             <div className="w-32 h-32 bg-gold/10 text-gold rounded-[40px] flex items-center justify-center mx-auto mb-12 animate-pulse shadow-[0_0_50px_rgba(245,196,81,0.2)]">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HelpCircle, ChevronDown, ChevronUp, MessageCircle } from 'lucide-react';
+import { HelpCircle, ChevronDown, ChevronUp, MessageCircle, ArrowLeft } from 'lucide-react';
 import { PageId } from '../types';
 
 interface FAQItemProps {
@@ -38,11 +38,18 @@ const FAQView: React.FC<FAQViewProps> = ({ onNavigate }) => {
     return (
         <div className="flex flex-col">
             {/* Header Section */}
-            <section className="py-24 bg-navy text-white text-center relative overflow-hidden">
+            <section className="py-12 bg-navy text-white text-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-gold/5 pointer-events-none" />
                 <div className="container mx-auto px-6 relative z-10">
-                    <HelpCircle className="text-gold mx-auto mb-6" size={64} />
-                    <h1 className="text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tighter uppercase">שאלות ותשובות</h1>
+                    <button
+                        onClick={() => onNavigate('home')}
+                        className="flex items-center gap-2 text-white/60 hover:text-gold transition-colors font-bold mb-8 group mx-auto"
+                    >
+                        <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
+                        <span>חזרה לדף הבית</span>
+                    </button>
+                    <HelpCircle className="text-gold mx-auto mb-6" size={48} />
+                    <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tighter uppercase">שאלות ותשובות</h1>
                     <p className="text-xl text-blue-100/60 max-w-2xl mx-auto font-medium">
                         כל מה שצריך לדעת על השקעות נדל"ן ב-DFW, מימון, ניהול והמודל הייחודי שלנו.
                     </p>
@@ -50,7 +57,7 @@ const FAQView: React.FC<FAQViewProps> = ({ onNavigate }) => {
             </section>
 
             {/* Questions Section */}
-            <section className="py-24 bg-white">
+            <section className="py-16 bg-white">
                 <div className="container mx-auto px-6">
                     <div className="max-w-4xl mx-auto space-y-2">
                         <FAQItem question="למה להשקיע דווקא בארה״ב?">
@@ -184,7 +191,7 @@ const FAQView: React.FC<FAQViewProps> = ({ onNavigate }) => {
                     </div>
 
                     {/* CTA Section */}
-                    <div className="mt-32 text-center bg-slate-50 p-12 md:p-20 rounded-[60px] border border-slate-100">
+                    <div className="mt-16 text-center bg-slate-50 p-12 md:p-16 rounded-[60px] border border-slate-100">
                         <MessageCircle className="text-gold mx-auto mb-6" size={48} />
                         <h2 className="text-3xl md:text-5xl font-black text-navy mb-8">עדיין יש שאלות?</h2>
                         <p className="text-xl text-slate-500 mb-12 max-w-xl mx-auto">

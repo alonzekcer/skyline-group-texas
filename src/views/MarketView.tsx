@@ -8,7 +8,8 @@ import {
     AlertTriangle,
     X,
     ShieldCheck,
-    Check
+    Check,
+    ArrowLeft
 } from 'lucide-react';
 import {
     XAxis,
@@ -30,9 +31,16 @@ interface MarketViewProps {
 const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
     <div className="flex flex-col">
         {/* HERO & GDP SECTION */}
-        <section className="py-24 bg-white">
+        <section className="py-16 bg-white">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col lg:flex-row gap-20 items-center mb-32">
+                <button
+                    onClick={() => onNavigate('home')}
+                    className="flex items-center gap-2 text-navy hover:text-gold transition-colors font-bold mb-8 group"
+                >
+                    <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
+                    <span>חזרה לדף הבית</span>
+                </button>
+                <div className="flex flex-col lg:flex-row gap-20 items-center mb-16">
                     <div className="lg:w-1/2">
                         <span className="text-gold font-black uppercase tracking-widest text-sm mb-4 block">MARKET ANALYTICS</span>
                         <h1 className="text-4xl md:text-7xl font-black text-navy mb-8 leading-[0.9]">DFW: מטרופולין <br /> <span className="text-gold">עם עוצמה של מדינה</span></h1>
@@ -112,7 +120,7 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                 </div>
 
                 {/* NUMBERS GRID */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                     {[
                         { icon: <Users />, label: "+9,000,000 תושבים", detail: "המטרו הרביעי בגודלו בארה\"ב עם הגירה חיובית של 150K איש בשנה." },
                         { icon: <TrendingUp />, label: "3.5% אבטלה בלבד", detail: "שוק תעסוקה חזק משמעותית מהממוצע הארצי, המבטיח יכולת תשלום דיירים." },
@@ -168,7 +176,7 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                 </div>
 
                 {/* STRATEGY COMPARISON: SKYLINE VS MID-WEST */}
-                <div className="py-32">
+                <div className="py-16">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-6xl font-black text-navy mb-6">למה רק נכסים איכותיים?</h2>
                         <p className="text-xl text-slate-500 max-w-2xl mx-auto">ההבדל הדק בין "מספרים יפים באקסל" לבין מציאות של צמיחה ושקט נפשי.</p>
@@ -246,7 +254,7 @@ const MarketView: React.FC<MarketViewProps> = ({ onNavigate }) => (
                 </div>
 
                 {/* Call to Action */}
-                <div className="text-center pb-24">
+                <div className="text-center pb-16">
                     <button
                         onClick={() => onNavigate('contact' as PageId)}
                         className="bg-gold text-navy px-12 py-5 rounded-2xl font-black text-xl shadow-2xl hover:scale-105 transition-all uppercase tracking-tighter"

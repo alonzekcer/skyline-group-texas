@@ -1,7 +1,12 @@
 import React from 'react';
-import { MessageCircle, Facebook, ArrowUpRight, Lock, CheckCircle2 } from 'lucide-react';
+import { MessageCircle, Facebook, ArrowUpRight, Lock, CheckCircle2, ArrowLeft } from 'lucide-react';
+import { PageId } from '../types';
 
-const ContactView: React.FC = () => {
+interface ContactViewProps {
+    onNavigate: (id: PageId) => void;
+}
+
+const ContactView: React.FC<ContactViewProps> = ({ onNavigate }) => {
     const [formData, setFormData] = React.useState({
         fullName: '',
         phone: '',
@@ -38,8 +43,15 @@ const ContactView: React.FC = () => {
     };
 
     return (
-        <section className="py-24 bg-white">
+        <section className="py-16 bg-white">
             <div className="container mx-auto px-6">
+                <button
+                    onClick={() => onNavigate('home')}
+                    className="flex items-center gap-2 text-navy hover:text-gold transition-colors font-bold mb-8 group"
+                >
+                    <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
+                    <span>חזרה לדף הבית</span>
+                </button>
                 <div className="max-w-6xl mx-auto bg-navy rounded-[60px] overflow-hidden flex flex-col lg:flex-row shadow-3xl">
                     <div className="lg:w-1/2 p-12 md:p-24 text-white relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_bottom_right,_rgba(245,196,81,0.05),_transparent)] pointer-events-none" />

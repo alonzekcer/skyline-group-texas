@@ -8,8 +8,8 @@ interface DealsSectionProps {
 
 const DealsSection: React.FC<DealsSectionProps> = ({ onScrollToContact }) => {
     return (
-        <section className="py-24 bg-slate-50 overflow-hidden border-y border-slate-100">
-            <div className="container mx-auto px-6 mb-16">
+        <section className="py-16 bg-slate-50 overflow-hidden border-y border-slate-100">
+            <div className="container mx-auto px-6 mb-10">
                 <div className="text-center">
                     <span className="text-gold font-black uppercase tracking-widest text-sm mb-4 block">REAL RESULTS</span>
                     <h2 className="text-4xl md:text-5xl font-black text-navy mb-6">עסקאות שביצענו לאחרונה</h2>
@@ -59,7 +59,7 @@ const DealsSection: React.FC<DealsSectionProps> = ({ onScrollToContact }) => {
                 </div>
             </div>
 
-            <div className="mt-16 text-center">
+            <div className="mt-12 text-center">
                 <button
                     onClick={onScrollToContact}
                     className="bg-gold text-navy px-10 py-4 rounded-2xl font-black text-lg shadow-xl hover:scale-105 transition-all flex items-center justify-center gap-3 mx-auto"

@@ -8,7 +8,7 @@ interface WhyDFWSectionProps {
 
 const WhyDFWSection: React.FC<WhyDFWSectionProps> = ({ onNavigate }) => {
     return (
-        <section className="py-24 bg-white">
+        <section className="py-16 bg-white">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col lg:flex-row gap-16 items-stretch">
                     <div className="lg:w-1/2 text-right flex flex-col">

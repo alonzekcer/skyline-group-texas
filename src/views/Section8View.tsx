@@ -13,9 +13,16 @@ interface Section8ViewProps {
 
 const Section8View: React.FC<Section8ViewProps> = ({ onNavigate }) => (
     <div className="flex flex-col">
-        <section className="py-24 bg-white">
+        <section className="py-16 bg-white">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
+                <button
+                    onClick={() => onNavigate('home')}
+                    className="flex items-center gap-2 text-navy hover:text-gold transition-colors font-bold mb-8 group"
+                >
+                    <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
+                    <span>חזרה לדף הבית</span>
+                </button>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-16">
                     <div>
                         <span className="bg-gold text-navy px-4 py-1.5 rounded-full font-black text-xs uppercase tracking-widest mb-6 inline-block">GOVERNMENT BACKED SECURITY</span>
                         <h1 className="text-4xl md:text-6xl font-black text-navy mb-8 leading-[0.9]">ממשלת ארצות הברית - <br /> <span className="text-gold">הדייר הבטוח והטוב בעולם.</span></h1>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Users, Phone } from 'lucide-react';
+import { Zap, Users, Phone, ArrowLeft } from 'lucide-react';
 import { FOUNDERS } from '../data/data';
 import { PageId } from '../types';
 
@@ -9,9 +9,16 @@ interface AboutViewProps {
 
 const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => (
     <div className="flex flex-col">
-        <section className="py-24 bg-white">
+        <section className="py-16 bg-white">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
+                <button
+                    onClick={() => onNavigate('home')}
+                    className="flex items-center gap-2 text-navy hover:text-gold transition-colors font-bold mb-8 group"
+                >
+                    <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
+                    <span>חזרה לדף הבית</span>
+                </button>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-16">
                     <div>
                         <span className="text-gold font-black uppercase tracking-widest text-sm mb-4 block">MEET THE EXPERTS</span>
                         <h1 className="text-4xl md:text-7xl font-black text-navy mb-8 leading-[0.9] tracking-tighter uppercase">SKYLINE <br /> <span className="text-gold">TEAM.</span></h1>

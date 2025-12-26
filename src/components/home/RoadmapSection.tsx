@@ -59,9 +59,9 @@ const RoadmapSection: React.FC<RoadmapSectionProps> = ({ onScrollToContact }) =>
     }, []);
 
     return (
-        <section className="py-32 bg-white relative overflow-hidden">
+        <section className="py-16 bg-white relative overflow-hidden">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-32">
+                <div className="text-center mb-12">
                     <span className="text-gold font-black uppercase tracking-[0.4em] text-sm block mb-6">Execution Path</span>
                     <h2 className="text-4xl md:text-7xl font-black text-navy mb-8 leading-none tracking-tighter uppercase">THE ROADMAP</h2>
                     <p className="text-xl text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed">
