@@ -50,8 +50,9 @@ const ContactSection: React.FC = () => {
                                 הגיע הזמן <br />
                                 <span className="text-gold">להשקיע נכון.</span>
                             </h2>
-                            <p className="hidden md:block text-blue-100/70 mb-10 leading-relaxed max-w-sm">
-                                השאירו פרטים ונחזור אליכם בהקדם עם ניתוח עסקאות מותאם אישית לפרופיל ההשקעה שלכם.
+                            <p className="text-[11px] md:text-base text-blue-100/70 mb-3 md:mb-10 leading-snug md:leading-relaxed max-w-sm">
+                                <span className="md:hidden">נחזור אליכם בהקדם עם ניתוח השקעות מותאם אישית.</span>
+                                <span className="hidden md:inline">השאירו פרטים ונחזור אליכם בהקדם עם ניתוח עסקאות מותאם אישית לפרופיל ההשקעה שלכם.</span>
                             </p>
 
                             <div className="hidden md:flex flex-col space-y-5">
@@ -144,12 +145,13 @@ const ContactSection: React.FC = () => {
                                     </div>
                                 </div>
 
-                                <div className="hidden md:flex items-start gap-3 py-2 cursor-pointer group" onClick={() => setFormData({ ...formData, marketingConsent: !formData.marketingConsent })}>
-                                    <div className={`mt-1 h-5 w-5 rounded border-2 transition-all flex items-center justify-center shrink-0 ${formData.marketingConsent ? 'bg-gold border-gold' : 'border-slate-200 group-hover:border-gold'}`}>
-                                        {formData.marketingConsent && <CheckCircle2 size={12} className="text-navy" strokeWidth={4} />}
+                                <div className="flex items-start gap-2 md:gap-3 py-1 md:py-2 cursor-pointer group" onClick={() => setFormData({ ...formData, marketingConsent: !formData.marketingConsent })}>
+                                    <div className={`mt-0.5 h-4 w-4 md:h-5 md:w-5 rounded border-2 transition-all flex items-center justify-center shrink-0 ${formData.marketingConsent ? 'bg-gold border-gold' : 'border-slate-200 group-hover:border-gold'}`}>
+                                        {formData.marketingConsent && <CheckCircle2 size={10} className="md:w-3 md:h-3 text-navy" strokeWidth={4} />}
                                     </div>
-                                    <p className="text-[13px] font-bold text-slate-500 leading-tight text-right select-none">
-                                        אני מאשר קבלת תוכן שיווקי, עדכונים על עסקאות חדשות ודיוור מ-Skyline Group.
+                                    <p className="text-[10px] md:text-[13px] font-bold text-slate-500 leading-tight text-right select-none">
+                                        <span className="md:hidden">אישור לקבלת עדכונים שיווקיים</span>
+                                        <span className="hidden md:inline">אני מאשר קבלת תוכן שיווקי, עדכונים על עסקאות חדשות ודיוור מ-Skyline Group.</span>
                                     </p>
                                 </div>
 
