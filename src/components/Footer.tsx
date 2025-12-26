@@ -29,7 +29,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                         ))}
                     </div>
                     <div className="flex gap-4">
-                        <a href="https://www.instagram.com/boazpinhas?igsh=MXRtb2xvMTRlMHJ2ag%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+                        <a href="https://www.instagram.com/boazpinhas/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
                             <Instagram />
                         </a>
                         <a href="https://chat.whatsapp.com/HfJZ2oe98xSIDg7FTSzhUB?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
