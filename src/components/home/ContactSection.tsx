@@ -38,23 +38,23 @@ const ContactSection: React.FC = () => {
     };
 
     return (
-        <section id="home-contact" className="py-16 bg-white">
+        <section id="home-contact" className="py-8 md:py-16 bg-white overflow-hidden">
             <div className="container mx-auto px-6">
-                <div className="max-w-5xl mx-auto bg-navy rounded-3xl md:rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+                <div className="max-w-5xl mx-auto bg-navy rounded-2xl md:rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
                     {/* Left Side: Content */}
-                    <div className="lg:w-5/12 bg-navy p-6 md:p-16 text-white relative flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5">
+                    <div className="lg:w-5/12 bg-navy p-5 md:p-16 text-white relative flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.08),transparent)] pointer-events-none"></div>
                         <div className="relative z-10 text-right">
-                            <span className="text-gold font-bold uppercase tracking-[0.3em] text-xs mb-4 block leading-none">Let's Talk</span>
-                            <h2 className="text-3xl md:text-5xl font-black mb-6 leading-tight tracking-tight">
+                            <span className="text-gold font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mb-2 md:mb-4 block leading-none">Let's Talk</span>
+                            <h2 className="text-2xl md:text-5xl font-black mb-3 md:mb-6 leading-tight tracking-tight">
                                 הגיע הזמן <br />
                                 <span className="text-gold">להשקיע נכון.</span>
                             </h2>
-                            <p className="text-sm md:text-base text-blue-100/70 mb-6 md:mb-10 leading-relaxed max-w-sm">
+                            <p className="hidden md:block text-blue-100/70 mb-10 leading-relaxed max-w-sm">
                                 השאירו פרטים ונחזור אליכם בהקדם עם ניתוח עסקאות מותאם אישית לפרופיל ההשקעה שלכם.
                             </p>
 
-                            <div className="space-y-5">
+                            <div className="hidden md:flex flex-col space-y-5">
                                 <div className="flex items-center justify-end gap-4 group">
                                     <span className="text-[13px] md:text-sm font-bold text-blue-50/90 text-right">קהילה של 1,000+ משקיעים</span>
                                     <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center text-gold border border-white/10 group-hover:bg-gold/10 transition-colors">
@@ -72,7 +72,7 @@ const ContactSection: React.FC = () => {
                     </div>
 
                     {/* Right Side: Form */}
-                    <div className="lg:w-7/12 p-6 md:p-16 bg-white flex flex-col justify-center">
+                    <div className="lg:w-7/12 p-5 md:p-16 bg-white flex flex-col justify-center">
                         {status === 'success' ? (
                             <div className="text-center py-12">
                                 <div className="w-20 h-20 bg-green-50 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -88,10 +88,10 @@ const ContactSection: React.FC = () => {
                                 </button>
                             </div>
                         ) : (
-                            <form className="space-y-4" onSubmit={handleSubmit}>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                            <form className="space-y-2 md:space-y-6" onSubmit={handleSubmit}>
+                                <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-6">
                                     <div className="space-y-1.5 text-right">
-                                        <label className="text-[10px] font-black text-navy/40 uppercase tracking-widest mr-1">Full Name</label>
+                                        <label className="hidden md:block text-[10px] font-black text-navy/40 uppercase tracking-widest mr-1">Full Name</label>
                                         <input
                                             type="text"
                                             required
@@ -102,7 +102,7 @@ const ContactSection: React.FC = () => {
                                         />
                                     </div>
                                     <div className="space-y-1.5 text-right">
-                                        <label className="text-[10px] font-black text-navy/40 uppercase tracking-widest mr-1">Phone</label>
+                                        <label className="hidden md:block text-[10px] font-black text-navy/40 uppercase tracking-widest mr-1">Phone</label>
                                         <input
                                             type="tel"
                                             required
@@ -115,7 +115,7 @@ const ContactSection: React.FC = () => {
                                 </div>
 
                                 <div className="space-y-1.5 text-right">
-                                    <label className="text-[10px] font-black text-navy/40 uppercase tracking-widest mr-1">Email</label>
+                                    <label className="hidden md:block text-[10px] font-black text-navy/40 uppercase tracking-widest mr-1">Email</label>
                                     <input
                                         type="email"
                                         required
@@ -127,7 +127,7 @@ const ContactSection: React.FC = () => {
                                 </div>
 
                                 <div className="space-y-1.5 text-right">
-                                    <label className="text-[10px] font-black text-navy/40 uppercase tracking-widest mr-1">Estimated Budget</label>
+                                    <label className="hidden md:block text-[10px] font-black text-navy/40 uppercase tracking-widest mr-1">Estimated Budget</label>
                                     <div className="relative">
                                         <select
                                             value={formData.budget}
@@ -138,13 +138,13 @@ const ContactSection: React.FC = () => {
                                             <option value="100,000-150,000">$100,000 - $150,000</option>
                                             <option value="150,000+">$150,000+</option>
                                         </select>
-                                        <div className="absolute left-6 top-1/2 -translate-y-1/2 pointer-events-none text-navy/30">
-                                            <ArrowUpRight size={18} />
+                                        <div className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none text-navy/30">
+                                            <ArrowUpRight size={16} />
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-3 py-2 cursor-pointer group" onClick={() => setFormData({ ...formData, marketingConsent: !formData.marketingConsent })}>
+                                <div className="hidden md:flex items-start gap-3 py-2 cursor-pointer group" onClick={() => setFormData({ ...formData, marketingConsent: !formData.marketingConsent })}>
                                     <div className={`mt-1 h-5 w-5 rounded border-2 transition-all flex items-center justify-center shrink-0 ${formData.marketingConsent ? 'bg-gold border-gold' : 'border-slate-200 group-hover:border-gold'}`}>
                                         {formData.marketingConsent && <CheckCircle2 size={12} className="text-navy" strokeWidth={4} />}
                                     </div>
@@ -156,16 +156,16 @@ const ContactSection: React.FC = () => {
                                 <button
                                     type="submit"
                                     disabled={status === 'loading'}
-                                    className="w-full bg-navy text-gold font-black py-4 md:py-5 rounded-2xl shadow-xl hover:shadow-gold/10 hover:-translate-y-0.5 active:translate-y-0 transition-all text-lg uppercase tracking-wider mt-4 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="w-full bg-navy text-gold font-black py-3 md:py-5 rounded-xl md:rounded-2xl shadow-xl hover:shadow-gold/10 hover:-translate-y-0.5 active:translate-y-0 transition-all text-sm md:text-lg uppercase tracking-wider mt-1 md:mt-4 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
-                                    {status === 'loading' ? 'שולח...' : status === 'error' ? 'שגיאה - נסה שוב' : 'Get Started'} <ArrowUpRight size={20} />
+                                    {status === 'loading' ? 'שולח...' : status === 'error' ? 'שגיאה - נסה שוב' : 'Get Started'} <ArrowUpRight size={16} className="md:w-5 md:h-5" />
                                 </button>
                             </form>
                         )}
 
-                        <div className="mt-8 flex justify-center gap-6 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">
-                            <span className="flex items-center gap-1.5"><Lock size={10} /> Secure</span>
-                            <span className="flex items-center gap-1.5"><CheckCircle2 size={10} /> Fast Response</span>
+                        <div className="mt-4 md:mt-8 flex justify-center gap-6 text-[9px] md:text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">
+                            <span className="flex items-center gap-1.5"><Lock size={8} /> Secure</span>
+                            <span className="flex items-center gap-1.5"><CheckCircle2 size={8} /> Fast Response</span>
                         </div>
                     </div>
                 </div>
