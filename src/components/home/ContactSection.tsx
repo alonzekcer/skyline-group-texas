@@ -40,17 +40,17 @@ const ContactSection: React.FC = () => {
     return (
         <section id="home-contact" className="py-16 bg-white">
             <div className="container mx-auto px-6">
-                <div className="max-w-5xl mx-auto bg-navy rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+                <div className="max-w-5xl mx-auto bg-navy rounded-3xl md:rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
                     {/* Left Side: Content */}
-                    <div className="lg:w-5/12 bg-navy p-10 md:p-16 text-white relative flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5">
+                    <div className="lg:w-5/12 bg-navy p-8 md:p-16 text-white relative flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/5">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.08),transparent)] pointer-events-none"></div>
                         <div className="relative z-10 text-right">
                             <span className="text-gold font-bold uppercase tracking-[0.3em] text-xs mb-4 block leading-none">Let's Talk</span>
-                            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight tracking-tight">
+                            <h2 className="text-3xl md:text-5xl font-black mb-6 leading-tight tracking-tight">
                                 הגיע הזמן <br />
                                 <span className="text-gold">להשקיע נכון.</span>
                             </h2>
-                            <p className="text-base text-blue-100/70 mb-10 leading-relaxed max-w-sm">
+                            <p className="text-sm md:text-base text-blue-100/70 mb-10 leading-relaxed max-w-sm">
                                 השאירו פרטים ונחזור אליכם בהקדם עם ניתוח עסקאות מותאם אישית לפרופיל ההשקעה שלכם.
                             </p>
 
@@ -72,7 +72,7 @@ const ContactSection: React.FC = () => {
                     </div>
 
                     {/* Right Side: Form */}
-                    <div className="lg:w-7/12 p-10 md:p-16 bg-white flex flex-col justify-center">
+                    <div className="lg:w-7/12 p-8 md:p-16 bg-white flex flex-col justify-center">
                         {status === 'success' ? (
                             <div className="text-center py-12">
                                 <div className="w-20 h-20 bg-green-50 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -156,7 +156,7 @@ const ContactSection: React.FC = () => {
                                 <button
                                     type="submit"
                                     disabled={status === 'loading'}
-                                    className="w-full bg-navy text-gold font-black py-5 rounded-2xl shadow-xl hover:shadow-gold/10 hover:-translate-y-0.5 active:translate-y-0 transition-all text-lg uppercase tracking-wider mt-4 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="w-full bg-navy text-gold font-black py-4 md:py-5 rounded-2xl shadow-xl hover:shadow-gold/10 hover:-translate-y-0.5 active:translate-y-0 transition-all text-lg uppercase tracking-wider mt-4 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
                                     {status === 'loading' ? 'שולח...' : status === 'error' ? 'שגיאה - נסה שוב' : 'Get Started'} <ArrowUpRight size={20} />
                                 </button>
