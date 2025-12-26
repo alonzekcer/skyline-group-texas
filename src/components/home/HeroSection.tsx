@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ArrowLeft } from 'lucide-react';
 
 interface HeroSectionProps {
@@ -6,9 +6,18 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToContact }) => {
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.playbackRate = 1.25;
+        }
+    }, []);
+
     return (
         <section className="relative h-[calc(100vh-4rem)] md:h-[calc(100dvh-5rem)] flex items-center justify-center overflow-hidden bg-navy py-4">
             <video
+                ref={videoRef}
                 className="absolute inset-0 w-full h-full object-cover opacity-40"
                 autoPlay muted loop playsInline
                 src="images/hero-video-compressed.mp4"
