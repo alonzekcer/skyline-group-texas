@@ -35,7 +35,9 @@ const MetricsSection: React.FC = () => {
                     <div className="hidden md:block w-px h-32 bg-slate-100"></div>
                     <div className="flex flex-col items-center text-center max-w-xs transition-transform duration-500 hover:scale-105">
                         <div className="relative mb-6">
-                            <AnimatedCounter target={3000} prefix="~$" />
+                            <div className="text-6xl md:text-7xl font-black text-navy tracking-tighter mb-4">
+                                <AnimatedCounter target={3000} prefix="~$" />
+                            </div>
                         </div>
                         <div className="space-y-2">
                             <p className="text-xl md:text-2xl font-bold text-slate-800 leading-tight">שכירות חודשית ממוצעת</p>
