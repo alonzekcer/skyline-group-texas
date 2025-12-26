@@ -9,11 +9,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToContact }) => {
     return (
         <section className="relative h-[calc(100vh-4rem)] md:h-[calc(100dvh-5rem)] flex items-center justify-center overflow-hidden bg-navy py-4">
             <video
-                className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale"
+                className="absolute inset-0 w-full h-full object-cover opacity-30"
                 autoPlay muted loop playsInline
-                src="https://cdn.coverr.co/videos/coverr-dallas-aerial-view-1565961844/1080p.mp4"
+                src="images/hero-video-compressed.mp4"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
+            <div className="absolute inset-0 bg-navy/70" />
             <div className="container mx-auto px-6 relative text-center text-white h-full flex flex-col justify-center max-h-full">
                 <div className="flex flex-col items-center mb-4 md:mb-6 fade-in-up" style={{ animationDelay: '0.05s' }}>
                     <img src="images/hero_logo.png" alt="Skyline Group" className="h-20 md:h-32 lg:h-40 w-auto object-contain drop-shadow-2xl" />
