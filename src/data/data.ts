@@ -31,7 +31,7 @@ export const FULL_SUPPORT: SupportStep[] = [
 export const DEALS: Deal[] = [
     {
         id: '1',
-        address: 'Grass Valley Trl, Fort Worth',
+        address: 'Fort Worth',
         price: '$268,000',
         marketValue: '$330,000',
         rent: '$2,980',
@@ -49,7 +49,7 @@ export const DEALS: Deal[] = [
     },
     {
         id: '2',
-        address: 'Garden Springs Dr, Fort Worth',
+        address: 'Fort Worth',
         price: '$275,000',
         marketValue: '$350,000',
         rent: '$3,500',
@@ -67,7 +67,7 @@ export const DEALS: Deal[] = [
     },
     {
         id: '3',
-        address: 'Waterwood Dr, Wylie',
+        address: 'Wylie',
         price: '$305,000',
         marketValue: '$380,000',
         rent: '$3,200',
@@ -85,7 +85,7 @@ export const DEALS: Deal[] = [
     },
     {
         id: '4',
-        address: 'Herring Dr, Forney',
+        address: 'Forney',
         price: '$280,000',
         marketValue: '$330,000',
         rent: '$3,100',
@@ -103,7 +103,7 @@ export const DEALS: Deal[] = [
     },
     {
         id: '5',
-        address: 'Wavecrest ct, Little Elm 75068',
+        address: 'Little Elm',
         price: '$275,000',
         marketValue: '$330,000',
         rent: '$3,200',
