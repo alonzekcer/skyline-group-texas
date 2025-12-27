@@ -10,7 +10,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToContact }) => {
 
     useEffect(() => {
         if (videoRef.current) {
-            videoRef.current.playbackRate = 1.25;
+            videoRef.current.playbackRate = 1.5;
         }
     }, []);
 
