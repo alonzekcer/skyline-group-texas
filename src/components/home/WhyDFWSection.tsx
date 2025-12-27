@@ -29,7 +29,7 @@ const WhyDFWSection: React.FC<WhyDFWSectionProps> = ({ onNavigate }) => {
                             <div className="absolute inset-0 bg-gold/5 rounded-full blur-3xl transform group-hover:scale-110 transition-transform duration-700 opacity-0 group-hover:opacity-50"></div>
 
                             {/* The Map */}
-                            <div className="relative z-10 w-full md:w-[85%]">
+                            <div className="relative z-10 w-[75%] md:w-[85%]">
                                 <img
                                     src="images/us_map.png"
                                     alt="USA Map - DFW Focus"
