@@ -8,9 +8,9 @@ interface WhyDFWSectionProps {
 
 const WhyDFWSection: React.FC<WhyDFWSectionProps> = ({ onNavigate }) => {
     return (
-        <section className="py-8 md:py-16 bg-white">
+        <section className="py-2 md:py-16 bg-white">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col lg:flex-row gap-8 md:gap-16 items-stretch">
+                <div className="flex flex-col lg:flex-row gap-4 md:gap-16 items-stretch">
                     <div className="lg:w-1/2 text-right flex flex-col">
                         <div>
                             <h2 className="text-3xl md:text-5xl font-black text-navy mb-4 md:mb-6 leading-tight">למה דווקא DFW?</h2>
