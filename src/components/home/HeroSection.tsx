@@ -11,6 +11,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToContact }) => {
     useEffect(() => {
         if (videoRef.current) {
             videoRef.current.playbackRate = 1.5;
+            // Force play to ensure it works on all devices
+            videoRef.current.play().catch(error => {
+                console.log("Video play failed:", error);
+            });
         }
     }, []);
 
@@ -20,6 +24,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToContact }) => {
                 ref={videoRef}
                 className="absolute inset-0 w-full h-full object-cover opacity-40"
                 autoPlay muted loop playsInline
+                preload="auto"
                 src="images/hero-video-compressed.mp4"
             />
             <div className="absolute inset-0 bg-navy/50" />
